@@ -1,0 +1,10 @@
+[
+  {
+    "Guid": "85d46719-0f12-41f4-a407-eba3c9778677",
+    "Name": "Vacation webservice call",
+    "Description": "Plugin for calling external webservice for registering vacation applications and returning vacation's ID.",
+    "Assembly": "WebCon.BPS.HelloWorld.SDK",
+    "Class": "WebCon.BPS.HelloWorld.SDK.WebServiceCallAction",
+    "Type": "CustomAction"
+  }
+]

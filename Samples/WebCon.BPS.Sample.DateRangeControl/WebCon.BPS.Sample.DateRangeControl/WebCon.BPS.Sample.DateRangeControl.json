@@ -1,0 +1,13 @@
+[
+  {
+    "Guid": "6cfcf38c-a5d1-4487-9dc2-09e6ee3b8b8e",
+    "Name": "DateRangeControl",
+    "Description": "Control for selecting date range",
+    "Assembly": "WebCon.BPS.Sample.DateRangeControl",
+    "Class": "WebCon.BPS.Sample.DateRangeControl.CustomControls.DateRangeLogic",
+    "SPAssembly": "WebCon.BPS.Sample.DateRangeControl.SP",
+    "SPClass": "WebCon.BPS.Sample.DateRangeControl.SP.Layouts.DateRangeControl",
+    "SPUrl": "/_layouts/15/WebCon/DateRangeControl.ascx",
+    "Type": "CustomFormField"
+  }
+]
