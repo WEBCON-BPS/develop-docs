@@ -97,7 +97,7 @@ namespace WebCon.BPS.Sample.RestAPI
                     })
                 };
 
-                var response = httpClient.PostAsync($"/api/data/v1.0/db/{dbId}/elements?pathId={pathId}", new StringContent(JsonConvert.SerializeObject(startNewWorkflowRequestBody), Encoding.UTF8, "application/json")).Result;
+                var response = httpClient.PostAsync($"/api/data/v4.0/db/{dbId}/elements?pathId={pathId}", new StringContent(JsonConvert.SerializeObject(startNewWorkflowRequestBody), Encoding.UTF8, "application/json")).Result;
                 var startNewWorkflowResponse = response.Content.ReadAsStringAsync().Result;
                 Console.WriteLine(startNewWorkflowResponse);
 
@@ -133,11 +133,11 @@ namespace WebCon.BPS.Sample.RestAPI
                     new JProperty("content", Convert.ToBase64String(bytes))
                 };
 
-                var response = httpClient.PostAsync($"/api/data/v1.0/db/{dbId}/elements/{elementId}/attachments", new StringContent(JsonConvert.SerializeObject(addNewAttachmentRequestBody), Encoding.UTF8, "application/json")).Result;
+                var response = httpClient.PostAsync($"/api/data/v4.0/db/{dbId}/elements/{elementId}/attachments", new StringContent(JsonConvert.SerializeObject(addNewAttachmentRequestBody), Encoding.UTF8, "application/json")).Result;
                 var addNewAttachmentResponse = response.Content.ReadAsStringAsync().Result;
                 Console.WriteLine(addNewAttachmentResponse);
 
-                response = httpClient.PatchAsync($"/api/data/v1.0/db/{dbId}/elements/{elementId}?pathguid={pathGuid}", new StringContent("{}", Encoding.UTF8, "application/json")).Result;
+                response = httpClient.PatchAsync($"/api/data/v4.0/db/{dbId}/elements/{elementId}?pathguid={pathGuid}", new StringContent("{}", Encoding.UTF8, "application/json")).Result;
                 var moveWorkflowInstanceToNextStepResponse = response.Content.ReadAsStringAsync().Result;
                 Console.WriteLine(moveWorkflowInstanceToNextStepResponse);
             }
@@ -239,7 +239,7 @@ namespace WebCon.BPS.Sample.RestAPI
                     })
                 };
 
-                var response = httpClient.PatchAsync($"/api/data/v1.0/db/{dbId}/elements/{elementId}", new StringContent(JsonConvert.SerializeObject(fillItemListsRequestBody), Encoding.UTF8, "application/json")).Result;
+                var response = httpClient.PatchAsync($"/api/data/v4.0/db/{dbId}/elements/{elementId}", new StringContent(JsonConvert.SerializeObject(fillItemListsRequestBody), Encoding.UTF8, "application/json")).Result;
                 var createInvoiceDecretationResponse = response.Content.ReadAsStringAsync().Result;
                 Console.WriteLine(createInvoiceDecretationResponse);
             }

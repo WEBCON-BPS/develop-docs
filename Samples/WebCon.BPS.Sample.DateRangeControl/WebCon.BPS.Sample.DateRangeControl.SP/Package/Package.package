@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="77aceebb-2135-4627-83ed-02f735ecac5c" solutionId="77aceebb-2135-4627-83ed-02f735ecac5c" resetWebServer="false" sharePointProductVersion="15.0" name="WebCon.BPS.Sample.DateRangeControl.SP" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
-  <projectItems>
-    <projectItemReference itemId="fb76857a-483a-4b02-a74a-dc955dd1b7c7" />
-  </projectItems>
-</package>
