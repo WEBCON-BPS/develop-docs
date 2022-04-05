@@ -78,7 +78,7 @@ namespace WebCon.BPS.HelloWorld.RestAPI
                 }}";
 
                 // Start new complaint workflow instance
-                var response = httpClient.PostAsync($"/api/data/v1.0/db/{dbId}/elements?pathId={startPathID}", new StringContent(startNewWorkflowRequestBody, Encoding.UTF8, "application/json")).Result;
+                var response = httpClient.PostAsync($"/api/data/v4.0/db/{dbId}/elements?pathId={startPathID}", new StringContent(startNewWorkflowRequestBody, Encoding.UTF8, "application/json")).Result;
                 var startNewWorkflowResponse = response.Content.ReadAsStringAsync().Result;
                 var elementId = JObject.Parse(startNewWorkflowResponse)["id"];
                 Console.WriteLine("Start new workflow response:");
@@ -94,13 +94,13 @@ namespace WebCon.BPS.HelloWorld.RestAPI
                 }}";
 
                 // Add new attachment to started workflow instance
-                response = httpClient.PostAsync($"/api/data/v1.0/db/{dbId}/elements/{elementId}/attachments", new StringContent(addNewAttachmentRequestBody, Encoding.UTF8, "application/json")).Result;
+                response = httpClient.PostAsync($"/api/data/v4.0/db/{dbId}/elements/{elementId}/attachments", new StringContent(addNewAttachmentRequestBody, Encoding.UTF8, "application/json")).Result;
                 var addNewAttachmentResponse = response.Content.ReadAsStringAsync().Result;
                 Console.WriteLine("Add new attachment response:");
                 Console.WriteLine(addNewAttachmentResponse + '\n');
 
                 // Get created workflow instance’s content
-                response = httpClient.GetAsync($"/api/data/v1.0/db/{dbId}/elements/{elementId}").Result;
+                response = httpClient.GetAsync($"/api/data/v4.0/db/{dbId}/elements/{elementId}").Result;
                 var workflowInstanceContent = JObject.Parse(response.Content.ReadAsStringAsync().Result);
                 var instanceNumber = workflowInstanceContent["header"]["instanceNumber"];
                 var statusId = workflowInstanceContent["header"]["statusId"];
