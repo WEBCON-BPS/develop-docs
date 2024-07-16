@@ -1,0 +1,17 @@
+﻿{
+  "extensions": [
+    {
+      "guid": "812940bf-39e1-48c6-b999-9750de40c956",
+      "name": "UpdateMultipleDocumentsOnCycle",
+      "description": "Action updates multiple documents based on an SQL query. Action can be used only on cycle",
+      "assembly": "WebCon.BpsExt.AdvancedExamples",
+      "class": "WebCon.BpsExt.AdvancedExamples.CustomActions.UpdateMultipleDocumentsOnCycle.UpdateMultipleDocumentsOnCycle",
+      "type": "CustomAction"
+    }
+  ],
+  "dependencies": [
+    "WebCon.BpsExt.AdvancedExamples"
+  ]
+}
+
+

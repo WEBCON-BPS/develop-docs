@@ -1,0 +1,23 @@
+{
+  "extensions": [
+    {
+      "guid": "467f4dcd-5c44-4f5b-b551-8ba9a43fea3f",
+      "name": "CustomDataSourceExample",
+      "description": "Example custom data source returning static data",
+      "assembly": "WebCon.BpsExt.QuickStart",
+      "class": "WebCon.BpsExt.QuickStart.CustomDataSourceExample.CustomDataSourceExample",
+      "type": "CustomDataSource"
+    },
+    {
+      "guid": "702e9a36-55b1-4dfc-b487-618f98980c4a",
+      "name": "SetFormField",
+      "description": "Action sets field with the passed value",
+      "assembly": "WebCon.BpsExt.QuickStart",
+      "class": "WebCon.BpsExt.QuickStart.SetFormField.SetFormField",
+      "type": "CustomAction"
+    }
+  ],
+  "dependencies": [
+    "WebCon.BpsExt.QuickStart"
+  ]
+}

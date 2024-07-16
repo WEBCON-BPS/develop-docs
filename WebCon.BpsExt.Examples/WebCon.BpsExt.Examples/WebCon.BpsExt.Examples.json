@@ -1,0 +1,31 @@
+{
+  "extensions": [
+    {
+      "guid": "87c696a1-583b-4b52-ba53-7ab3cc290c65",
+      "name": "SetItemList",
+      "description": "Action sets the item list values based on table returned from SQL query",
+      "assembly": "WebCon.BpsExt.Examples",
+      "class": "WebCon.BpsExt.Examples.CustomActions.SetItemList.SetItemsList",
+      "type": "CustomAction"
+    },
+    {
+      "guid": "6ac52e93-89a4-4242-bde7-6c588db952f3",
+      "name": "StartNewDocument",
+      "description": "Action starts new document",
+      "assembly": "WebCon.BpsExt.Examples",
+      "class": "WebCon.BpsExt.Examples.CustomActions.StartNewDocument.StartNewDocument",
+      "type": "CustomAction"
+    },
+    {
+      "guid": "9afbf904-831f-49a7-ab8d-26408340e37a",
+      "name": "CopyAttachment",
+      "description": "Action copies an attachment from one document to another ",
+      "assembly": "WebCon.BpsExt.Examples",
+      "class": "WebCon.BpsExt.Examples.CustomActions.CopyAttachment.CopyAttachment",
+      "type": "CustomAction"
+    }
+  ],
+  "dependencies": [
+    "WebCon.BpsExt.Examples"
+  ]
+}
