@@ -15,25 +15,25 @@ jobs:
       with:
         dotnet-version: 6.0.x       
     - name: Restore dependencies
-      run: dotnet restore WebCon.BpsExt.Examples.sln
+      run: dotnet restore WebCon.BpsExt.Examples/WebCon.BpsExt.Examples.sln
     - name: Build
-      run: dotnet build WebCon.BpsExt.Examples.sln  --no-restore --configuration Release 
+      run: dotnet build WebCon.BpsExt.Examples/WebCon.BpsExt.Examples.sln  --no-restore --configuration Release 
     - uses: actions/upload-artifact@v3
       with:
         name: WebCon.BpsExt.AdvancedExamples
         path: |
-          WebCon.BpsExt.AdvancedExamples/bin/Release/netstandard2.0/WebCon.BpsExt.AdvancedExamples.dll
-          WebCon.BpsExt.AdvancedExamples/bin/Release/netstandard2.0/WebCon.BpsExt.AdvancedExamples.json
+          WebCon.BpsExt.Examples/WebCon.BpsExt.AdvancedExamples/bin/Release/netstandard2.0/WebCon.BpsExt.AdvancedExamples.dll
+          WebCon.BpsExt.Examples/WebCon.BpsExt.AdvancedExamples/bin/Release/netstandard2.0/WebCon.BpsExt.AdvancedExamples.json
     - uses: actions/upload-artifact@v3
       with:
         name: WebCon.BpsExt.Examples
         path: |
-          WebCon.BpsExt.Examples/bin/Release/netstandard2.0/WebCon.BpsExt.Examples.dll
-          WebCon.BpsExt.Examples/bin/Release/netstandard2.0/WebCon.BpsExt.Examples.json
+          WebCon.BpsExt.Examples/WebCon.BpsExt.Examples/bin/Release/netstandard2.0/WebCon.BpsExt.Examples.dll
+          WebCon.BpsExt.Examples/WebCon.BpsExt.Examples/bin/Release/netstandard2.0/WebCon.BpsExt.Examples.json
     - uses: actions/upload-artifact@v3
       with:
         name: WebCon.BpsExt.QuickStart
         path: |
-          WebCon.BpsExt.QuickStart/bin/Release/netstandard2.0/WebCon.BpsExt.QuickStart.dll
-          WebCon.BpsExt.QuickStart/bin/Release/netstandard2.0/WebCon.BpsExt.QuickStart.json
+          WebCon.BpsExt.Examples/WebCon.BpsExt.QuickStart/bin/Release/netstandard2.0/WebCon.BpsExt.QuickStart.dll
+          WebCon.BpsExt.Examples/WebCon.BpsExt.QuickStart/bin/Release/netstandard2.0/WebCon.BpsExt.QuickStart.json
           
