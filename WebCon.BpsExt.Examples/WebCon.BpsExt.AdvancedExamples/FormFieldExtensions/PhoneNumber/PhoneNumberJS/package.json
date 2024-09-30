@@ -1,0 +1,33 @@
+{
+  "scripts": {
+    "build": "npx gulp",
+    "check": "npx gulp check",
+    "format": "npx gulp format",
+    "lint": "npx gulp lint",
+    "postinstall": "npm run-script build",
+    "publish-sdk": "npx publish-sdk",
+    "start": "npx js-custom-control-workbench",
+    "watch": "npx gulp watch"
+  },
+  "engines" : { 
+    "npm" : ">=8.0.0",
+    "node" : ">=16.0.0"
+  },
+  "dependencies": {
+    "core-js": "^3.3.2",
+    "classnames": "^2.2.6",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6"
+  },
+  "devDependencies": {
+    "@webcon/js-custom-control-build": "^2.0.0",
+    "@webcon/js-custom-control-workbench": "^2.0.0",
+    "@webcon/publish-sdk": "^1.0.3",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.1.0",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-react": "^7.14.3",
+    "gulp": "^4.0.2"
+  },
+  "private": true
+}

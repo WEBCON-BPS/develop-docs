@@ -19,5 +19,6 @@
   ],
   "dependencies": [
     "WebCon.BpsExt.QuickStart"
-  ]
+  ],
+  "version": "24"
 }

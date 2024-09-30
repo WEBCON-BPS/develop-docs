@@ -1,11 +1,19 @@
-{
+﻿{
   "extensions": [
+    {
+      "guid": "9da83e9b-f1f7-4097-ac88-b256f91f79c8",
+      "name": "Phone Number",
+      "description": "Phone Number form field extensions with only logic part",
+      "assembly": "WebCon.BpsExt.Examples",
+      "class": "WebCon.BpsExt.Examples.FormFieldExtensions.PhoneNumber.PhoneNumberLogic",
+      "type": "FormFieldExtension"
+    },
     {
       "guid": "87c696a1-583b-4b52-ba53-7ab3cc290c65",
       "name": "SetItemList",
       "description": "Action sets the item list values based on table returned from SQL query",
       "assembly": "WebCon.BpsExt.Examples",
-      "class": "WebCon.BpsExt.Examples.CustomActions.SetItemList.SetItemsList",
+      "class": "WebCon.BpsExt.Examples.CustomActions.SetItemList.SetItemList",
       "type": "CustomAction"
     },
     {
@@ -27,5 +35,6 @@
   ],
   "dependencies": [
     "WebCon.BpsExt.Examples"
-  ]
+  ],
+  "version": "24"
 }

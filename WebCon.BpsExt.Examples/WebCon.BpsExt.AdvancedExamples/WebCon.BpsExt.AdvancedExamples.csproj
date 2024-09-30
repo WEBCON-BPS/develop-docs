@@ -44,9 +44,27 @@
     <Compile Include="CustomActions\UpdateMultipleDocumentsOnCycle\UpdateMultipleDocumentsOnCycleConfig.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="FormFieldExtensions\PhoneNumber\PhoneNumberLogic.cs" />
+    <Compile Include="FormFieldExtensions\PhoneNumber\PhoneNumberLogicConfig.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="FormFieldExtensions\PhoneNumber\PhoneNumberJS\.eslintrc.json" />
+    <Content Include="FormFieldExtensions\PhoneNumber\PhoneNumberJS\package.json" />
+    <Content Include="FormFieldExtensions\PhoneNumber\PhoneNumberJS\src\assets\clear.png" />
+    <Content Include="FormFieldExtensions\PhoneNumber\PhoneNumberJS\src\components\PhoneNumber.css" />
+    <Content Include="FormFieldExtensions\PhoneNumber\PhoneNumberJS\src\manifest.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FormFieldExtensions\PhoneNumber\PhoneNumberJS\.prettierrc" />
+    <None Include="FormFieldExtensions\PhoneNumber\PhoneNumberJS\gulpfile.js" />
+    <None Include="FormFieldExtensions\PhoneNumber\PhoneNumberJS\README.md" />
+    <None Include="FormFieldExtensions\PhoneNumber\PhoneNumberJS\src\AdditionalValidator.js" />
+    <None Include="FormFieldExtensions\PhoneNumber\PhoneNumberJS\src\components\Number.js" />
+    <None Include="FormFieldExtensions\PhoneNumber\PhoneNumberJS\src\components\PhoneNumber.js" />
+    <None Include="FormFieldExtensions\PhoneNumber\PhoneNumberJS\src\components\Prefix.js" />
+    <None Include="FormFieldExtensions\PhoneNumber\PhoneNumberJS\src\CustomControlComponent.js" />
+    <None Include="FormFieldExtensions\PhoneNumber\PhoneNumberJS\src\EmptyValueValidator.js" />
     <None Include="WebCon.BpsExt.AdvancedExamples.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -57,6 +75,6 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
-    <PackageReference Include="WEBCON.BPS.2023.SDK.Libraries" Version="23.1.1.38" />
+    <PackageReference Include="WEBCON.BPS.2024.SDK.Libraries" Version="24.1.1.25" />
   </ItemGroup>
 </Project>

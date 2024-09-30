@@ -54,6 +54,6 @@
     <Folder Include="Publish\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="WEBCON.BPS.2023.SDK.Libraries" Version="23.1.1.38" />
+    <PackageReference Include="WEBCON.BPS.2024.SDK.Libraries" Version="24.1.1.25" />
   </ItemGroup>
 </Project>

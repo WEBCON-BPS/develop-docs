@@ -9,7 +9,7 @@ namespace WebCon.BpsExt.QuickStart.SetFormField
     public class SetFormField : CustomAction<SetFormFieldConfig>
     {
         StringBuilder _logger = new StringBuilder();
-        public override Task RunAsync(RunCustomActionParams args)
+        public override async Task RunAsync(RunCustomActionParams args)
         {
             try
             {
@@ -17,7 +17,7 @@ namespace WebCon.BpsExt.QuickStart.SetFormField
                 var field = args.Context.CurrentDocument.Fields.GetByID(Configuration.FieldId);
 
                 _logger.Append($"Setting the {field.DisplayName} field with the value: {Configuration.Value}");
-                field.SetValue(Configuration.Value);
+                await field.SetValueAsync(Configuration.Value);
             }
             catch (Exception ex)
             {
@@ -30,7 +30,6 @@ namespace WebCon.BpsExt.QuickStart.SetFormField
                 args.LogMessage = _logger.ToString();
                 args.Context.PluginLogger.AppendDebug(_logger.ToString());
             }       
-            return Task.CompletedTask;
         }
     }
 }

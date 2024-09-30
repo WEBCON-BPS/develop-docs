@@ -44,7 +44,7 @@ namespace WebCon.BpsExt.AdvancedExamples.CustomActions.UpdateMultipleDocumentsOn
             foreach (var data in updateData)
             {
                 var doc = await documentsManager.GetDocumentByIdAsync(data.DocumentId, true);
-                doc.SetFieldValue(Configuration.FieldId, data.Value);
+                await doc.SetFieldValueAsync(Configuration.FieldId, data.Value);
                 await documentsManager.UpdateDocumentAsync(new UpdateDocumentParams(doc) { SkipPermissionsCheck = true });
             }
         }

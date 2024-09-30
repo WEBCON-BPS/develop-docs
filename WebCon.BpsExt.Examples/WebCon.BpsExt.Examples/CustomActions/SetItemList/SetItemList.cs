@@ -1,12 +1,10 @@
 ﻿using System;
 using System.Data;
-using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using WebCon.WorkFlow.SDK.ActionPlugins;
 using WebCon.WorkFlow.SDK.ActionPlugins.Model;
 using WebCon.WorkFlow.SDK.Tools.Data;
-using WebCon.WorkFlow.SDK.Tools.Log;
 
 namespace WebCon.BpsExt.Examples.CustomActions.SetItemList
 {
@@ -53,9 +51,9 @@ namespace WebCon.BpsExt.Examples.CustomActions.SetItemList
             foreach (DataRow row in dt.Rows)
             {
                 var listRow = await itemList.Rows.AddNewRowAsync();
-                listRow.SetCellValue(Configuration.ItemListConfig.FirstColumnId, row[0]);
-                listRow.SetCellValue(Configuration.ItemListConfig.SecondColumnId, row[1]);
-                listRow.SetCellValue(Configuration.ItemListConfig.ThirdColumnId, row[2]);
+                await listRow.SetCellValueAsync(Configuration.ItemListConfig.FirstColumnId, row[0]);
+                await listRow.SetCellValueAsync(Configuration.ItemListConfig.SecondColumnId, row[1]);
+                await listRow.SetCellValueAsync(Configuration.ItemListConfig.ThirdColumnId, row[2]);
             }
         }
     }
