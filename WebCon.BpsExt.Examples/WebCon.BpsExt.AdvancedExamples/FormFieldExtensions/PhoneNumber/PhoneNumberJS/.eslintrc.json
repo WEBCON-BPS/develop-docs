@@ -1,0 +1,44 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended"
+    ],
+    "globals": {
+        "webcon": "readonly"
+    },
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "babel",
+        "react"
+    ],
+    "rules": {
+        "no-console": "off",
+        "no-unused-vars": "off"
+    },
+    "overrides": [
+        {
+            "files": [
+                "./gulpfile.js"
+            ],
+            "env": {
+                "node": true
+            }
+        }
+    ],
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    }
+}

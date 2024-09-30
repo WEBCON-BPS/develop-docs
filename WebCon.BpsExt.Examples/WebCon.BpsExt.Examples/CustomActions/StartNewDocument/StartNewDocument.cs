@@ -18,7 +18,7 @@ namespace WebCon.BpsExt.Examples.CustomActions.StartNewDocument
             {
                 var manager = new DocumentsManager(args.Context);
                 var newDocument = await GetNewDocumentAsync(manager);
-                SetFields(newDocument);
+                await SetFieldsAsync(newDocument);
                 await StartNewWorkFlowAsync(newDocument, manager);
             }
             catch (Exception ex)
@@ -45,11 +45,11 @@ namespace WebCon.BpsExt.Examples.CustomActions.StartNewDocument
             await manager.StartNewWorkFlowAsync(startNewWorkFlowParams);
         }
 
-        private void SetFields(NewDocumentData newDocument)
+        private async Task SetFieldsAsync(NewDocumentData newDocument)
         {
             _logger.AppendLine("Setting fields on new document");
             foreach (var field in Configuration.FieldsValues)
-                newDocument.SetFieldValue(field.FieldId, field.Value);          
+                await newDocument.SetFieldValueAsync(field.FieldId, field.Value);          
         }
 
         private async Task<NewDocumentData> GetNewDocumentAsync(DocumentsManager manager)

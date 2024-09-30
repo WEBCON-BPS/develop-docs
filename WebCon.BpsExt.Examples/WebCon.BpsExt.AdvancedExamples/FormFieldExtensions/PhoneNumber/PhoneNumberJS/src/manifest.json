@@ -1,0 +1,12 @@
+{
+  "packageName": "PhoneNumberJS",
+  "solutionId": "8c70be35-4f98-4970-b25a-8b4e692a5857",
+  "files": {
+    "component": "./src/CustomControlComponent.js",
+    "emptyValueValidator": "./src/EmptyValueValidator.js",
+    "additionalValidator": "./src/AdditionalValidator.js",
+    "assets": {
+      "clear": "./src/assets/clear.png"
+    }
+  }
+}

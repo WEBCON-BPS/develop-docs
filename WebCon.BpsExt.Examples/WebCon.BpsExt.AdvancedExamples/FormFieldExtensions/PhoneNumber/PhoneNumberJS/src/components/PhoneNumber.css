@@ -1,0 +1,50 @@
+.phone-number--clear-btn {
+    background-color: transparent;
+    border: none;
+    margin: 0 4px;
+    width: 34px;
+    cursor: pointer;
+  }
+  
+  .phone-number--prefix {
+    width: 50px;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .phone-number--number {
+    width: 120px;
+  }
+  
+  .left-bracket {
+    margin-right: 4px;
+  }
+
+  .right-bracket {
+    margin-left: 4px;
+  }
+  .phone-number--separator {
+    display: inline-block;
+    font-size: 26px;
+    margin: 2px 4px;
+  }
+  
+  .phone-number--prefix-bracket {
+    display: inline-block;
+    font-size: 34px;
+    vertical-align: bottom;
+  }
+  
+  .clear-btn--image {
+    width: 12px;
+    height: 12px;
+  }
+
+  .number-field {
+    height: 34px;
+    padding: 2px 5px;
+    font-size: 14px;
+    color: #444;
+    border: 1px solid #cdcdcd;
+  }
+  
