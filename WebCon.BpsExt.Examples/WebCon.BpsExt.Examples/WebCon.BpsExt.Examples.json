@@ -1,5 +1,21 @@
-﻿{
+{
   "extensions": [
+    {
+      "guid": "d5a0b728-1fb9-4350-98d8-1cd66e9479a8",
+      "name": "DBAuthenticationExample",
+      "description": "Extenions modifies the connectionString passed in the configuration",
+      "assembly": "WebCon.BpsExt.Examples",
+      "class": "WebCon.BpsExt.Examples.CustomAuthentications.DatabaseAuthentication.DBAuthenticationExample",
+      "type": "CustomDatabaseAuthentication"
+    },
+    {
+      "guid": "c9384a57-4590-4dfb-b4be-87e648635945",
+      "name": "RestAuthenticationExample",
+      "description": "Extension returns client with authorization header set with the value passed in the configuration",
+      "assembly": "WebCon.BpsExt.Examples",
+      "class": "WebCon.BpsExt.Examples.CustomAuthentications.RestAuthentication.RestAuthenticationExample",
+      "type": "CustomRESTAuthentication"
+    },
     {
       "guid": "9da83e9b-f1f7-4097-ac88-b256f91f79c8",
       "name": "Phone Number",
@@ -36,5 +52,5 @@
   "dependencies": [
     "WebCon.BpsExt.Examples"
   ],
-  "version": "24"
+  "version": "25"
 }

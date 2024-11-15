@@ -44,6 +44,10 @@
     <Compile Include="CustomActions\SetItemList\SetItemListConfig.cs" />
     <Compile Include="CustomActions\StartNewDocument\StartNewDocument.cs" />
     <Compile Include="CustomActions\StartNewDocument\StartNewDocumentConfig.cs" />
+    <Compile Include="CustomAuthentications\DatabaseAuthentication\DBAuthenticationExample.cs" />
+    <Compile Include="CustomAuthentications\DatabaseAuthentication\DBAuthenticationExampleConfig.cs" />
+    <Compile Include="CustomAuthentications\RestAuthentication\RestAuthenticationExample.cs" />
+    <Compile Include="CustomAuthentications\RestAuthentication\RestAuthenticationExampleConfig.cs" />
     <Compile Include="FormFieldExtensions\PhoneNumber\PhoneNumberLogic.cs" />
     <Compile Include="FormFieldExtensions\PhoneNumber\PhoneNumberLogicConfig.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -59,6 +63,6 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
-    <PackageReference Include="WEBCON.BPS.2024.SDK.Libraries" Version="24.1.1.25" />
+    <PackageReference Include="WEBCON.BPS.2025.SDK.Libraries" Version="25.1.1.15" />
   </ItemGroup>
 </Project>
